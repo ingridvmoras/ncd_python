@@ -1,0 +1,35 @@
+
+   5 Populations
+
+Neighbor-Joining/UPGMA method version 3.695
+
+
+ Neighbor-joining method
+
+ Negative branch lengths allowed
+
+
+    +-----------------------------BBBBBBBBB 
+  +-1 
+  ! +-----------------------------CCCCCCCCC 
+  ! 
+  ! +-----------------------------DDDDDDDDD 
+  2-3 
+  ! +-----------------------------EEEEEEEEE 
+  ! 
+  +-----------------------------AAAAAAAAA 
+
+
+remember: this is an unrooted tree!
+
+Between        And            Length
+-------        ---            ------
+   2             1            0.00009
+   1          BBBBBBBBB       0.49932
+   1          CCCCCCCCC       0.49930
+   2             3            0.00007
+   3          DDDDDDDDD       0.49945
+   3          EEEEEEEEE       0.49955
+   2          AAAAAAAAA       0.49944
+
+

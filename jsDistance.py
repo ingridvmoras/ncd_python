@@ -14,8 +14,8 @@ def windowCount(data, seq):
 
 	count = 0
 	for k in range(len(data)):
-	    if data[k:k+3] == seq:
-	        count += 1
+		if data[k:k+3] == seq:
+			count += 1
 	return count        
 
 def jensen_shannon(data_x, data_y):
@@ -53,7 +53,7 @@ def jensen_shannon(data_x, data_y):
 		
 		if q[i] == 0.0: 
 				sum2 = sum2
-		else:	
+		else:    
 			sum2 = sum2 + q[i]*np.log(q[i]/m[i])
 
 	return 0.5*(sum1+sum2)
@@ -89,10 +89,10 @@ def jsDistance_calc(glob_files):
 	f.write('\n'+item_name*9+' ')
 	f.close()
 	
-	print "Script execution time:", str(datetime.now()-startTime)[0:7]
+	print("Script execution time:", str(datetime.now()-startTime)[0:7])
 
 if len(sys.argv) < 2:
-	print "syntax error: python jsDistance.py data_folder"
-	print "example: python jsDistance.py data/animals/"
+	print("syntax error: python jsDistance.py data_folder")
+	print("example: python jsDistance.py data/animals/")
 else:
 	jsDistance_calc(sys.argv[1])
